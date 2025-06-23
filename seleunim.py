@@ -23,6 +23,7 @@ registerpage = driver.find_element(by="css selector", value="app-user-menu butto
 registerpage.click()
 print("done")
 
-email=driver.find_element(by="xpath", value="//*[@id="password"]").send_keys("islam@gmail")
-
+#email=driver.find_element(by="xpath", value="//*[@id=\"password\"]").send_keys("islam@gmail")
+element_enter=driver.find_element(by="css selector", value="pf-c-form-control")
+element_enter.send_keys("your_barcode_value")
 
