@@ -22,3 +22,7 @@ driver.get(website)
 registerpage = driver.find_element(by="css selector", value="app-user-menu button")
 registerpage.click()
 print("done")
+
+email=driver.find_element(by="xpath", value="//*[@id="password"]").send_keys("islam@gmail")
+
+
